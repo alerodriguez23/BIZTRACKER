@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('cliente', 'Clientecontroller');
+Route::get('/clientes/create', 'ClienteController@create')->name('clientes.create');
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
