@@ -33,6 +33,7 @@ class CategoriaController extends Controller
     {
         $categoria = new Categoria();
         return view('categoria.create', compact('categoria'));
+        
     }
 
     /**
@@ -46,6 +47,10 @@ class CategoriaController extends Controller
         request()->validate(Categoria::$rules);
 
         $categoria = Categoria::create($request->all());
+        $categoria = new Categoria();
+        $categoria->nombre = $request->nombre; // Suponiendo que "nombre" es un campo en tu tabla de categorías
+        $categoria->save();
+        
 
         return redirect()->route('categorias.index')
             ->with('success', 'Categoria created successfully.');

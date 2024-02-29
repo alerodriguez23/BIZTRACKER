@@ -26,6 +26,13 @@
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                        <a href="{{ url('/clientes') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Clientes</a>
+                        <a href="{{ url('/productos') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Productos</a>
+                        <a href="{{ url('/categorias') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Categorias</a>
+                        <a href="{{ url('/proveedores') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Proveedores</a>
+                        <a href="{{ url('/compras') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Compras</a>
+                        <a href="{{ url('/envios') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Envios</a>
+                        <a href="{{ url('/pedidos') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Pedidos</a>
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 

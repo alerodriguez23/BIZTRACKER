@@ -53,9 +53,9 @@
 											<td>{{ $proveedore->id_categoria }}</td>
 
                                             <td>
-                                                <form action="{{ route('proveedores.destroy',$proveedore->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('proveedores.show',$proveedore->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('proveedores.edit',$proveedore->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
+                                                <form action="{{ route('proveedores.destroy',$proveedore->id_proveedor) }}" method="POST">
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('proveedores.show',$proveedore->id_proveedor) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('proveedores.edit',$proveedore->id_proveedor) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>

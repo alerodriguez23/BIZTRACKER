@@ -20,7 +20,7 @@ class FormaPagoController extends Controller
     {
         $formaPagos = FormaPago::paginate();
 
-        return view('forma-pago.index', compact('formaPagos'))
+        return view('forma_pago.index', compact('formaPagos'))
             ->with('i', (request()->input('page', 1) - 1) * $formaPagos->perPage());
     }
 
@@ -32,7 +32,7 @@ class FormaPagoController extends Controller
     public function create()
     {
         $formaPago = new FormaPago();
-        return view('forma-pago.create', compact('formaPago'));
+        return view('forma_pago.create', compact('formaPago'));
     }
 
     /**
@@ -47,7 +47,7 @@ class FormaPagoController extends Controller
 
         $formaPago = FormaPago::create($request->all());
 
-        return redirect()->route('forma-pagos.index')
+        return redirect()->route('forma_pagos.index')
             ->with('success', 'FormaPago created successfully.');
     }
 
@@ -61,7 +61,7 @@ class FormaPagoController extends Controller
     {
         $formaPago = FormaPago::find($id);
 
-        return view('forma-pago.show', compact('formaPago'));
+        return view('forma_pago.show', compact('formaPago'));
     }
 
     /**
@@ -74,7 +74,7 @@ class FormaPagoController extends Controller
     {
         $formaPago = FormaPago::find($id);
 
-        return view('forma-pago.edit', compact('formaPago'));
+        return view('forma_pago.edit', compact('formaPago'));
     }
 
     /**
@@ -90,7 +90,7 @@ class FormaPagoController extends Controller
 
         $formaPago->update($request->all());
 
-        return redirect()->route('forma-pagos.index')
+        return redirect()->route('forma_pagos.index')
             ->with('success', 'FormaPago updated successfully');
     }
 
@@ -103,7 +103,7 @@ class FormaPagoController extends Controller
     {
         $formaPago = FormaPago::find($id)->delete();
 
-        return redirect()->route('forma-pagos.index')
+        return redirect()->route('forma_pagos.index')
             ->with('success', 'FormaPago deleted successfully');
     }
 }
