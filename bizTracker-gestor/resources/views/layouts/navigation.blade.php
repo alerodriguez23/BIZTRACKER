@@ -15,6 +15,28 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('clientes')" :active="request()->routeIs('clientes')">
+                        {{ __('Clientes') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('productos')" :active="request()->routeIs('productos')">
+                        {{ __('Productos') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('pedidos')" :active="request()->routeIs('pedidos')">
+                        {{ __('Pedidos') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('envios')" :active="request()->routeIs('envios')">
+                        {{ __('Envios') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('categorias')" :active="request()->routeIs('categorias')">
+                        {{ __('Categorias') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('compras')" :active="request()->routeIs('compras')">
+                        {{ __('compras') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('proveedores')" :active="request()->routeIs('proveedores')">
+                        {{ __('Proveedores') }}
+                    </x-nav-link>
+                   
                 </div>
             </div>
 
