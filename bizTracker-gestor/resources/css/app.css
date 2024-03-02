@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 
-*{
-    background-color: burlywood;
-    font: black;
-    
-}
+.italianno-regular {
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
