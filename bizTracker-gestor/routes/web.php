@@ -85,22 +85,29 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/clientes', 'ClienteController@index')->name('clientes');
-
-Route::get('/productos', 'ProductoController@index')->name('productos');
-
-Route::get('/pedidos', 'PedidoController@index')->name('pedidos');
-
-Route::get('/envios', 'EnvioController@index')->name('envios');
-
-Route::get('/categorias', 'CategoriaController@index')->name('categorias');
-
-Route::get('/compras', 'CompraController@index')->name('compras');
-
-Route::get('/proveedores', 'ProveedoreController@index')->name('proveedores');
 
 
 
+
+
+
+route::middleware('auth')->group(function(){
+
+    Route::get('/clientes', 'ClienteController@index')->name('clientes');
+
+    Route::get('/productos', 'ProductoController@index')->name('productos');
+
+    Route::get('/proveedores', 'ProveedoreController@index')->name('proveedores');
+
+    Route::get('/pedidos', 'PedidoController@index')->name('pedidos');
+
+    Route::get('/envios', 'EnvioController@index')->name('envios');
+
+    Route::get('/categorias', 'CategoriaController@index')->name('categorias');
+
+    Route::get('/compras', 'CompraController@index')->name('compras');
+
+});
 
 
 Route::middleware('auth')->group(function () {
