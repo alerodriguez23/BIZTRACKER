@@ -30,7 +30,7 @@ class Cliente extends Model
     ];
 
     protected $perPage = 20;
-
+    protected $table = 'clientes';
     /**
      * Attributes that should be mass-assignable.
      *
