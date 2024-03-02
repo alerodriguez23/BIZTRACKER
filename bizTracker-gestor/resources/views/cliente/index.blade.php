@@ -5,22 +5,24 @@
 @endsection
 
 @section('content')
-    <div class="container-fluid">
+    <div class="container-fluid" >
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
-                            <span id="card_title">
-                                {{ __('Cliente') }}
+                            <span class="card_title" style="font-family:'times new roman', sans-serif; font-size: 24px; color: #333333; text-align: center; display: block;">
+                                {{ __('Control de Clientes') }}
                             </span>
+                            
 
-                            <div class="text-right">
-                                <a href="{{ route('clientes.create') }}" class="btn btn-sm rounded" style="background-color: #9A816D; color: #fff; padding: 0.5rem 1rem; position: relative; left: -1040%; top: 40px;">
+                            <div class="text-right" style="position: relative;">
+                                <a href="{{ route('clientes.create') }}" class="btn btn-sm rounded" style="background-color: #9A816D; color: #fff; padding: 0.5rem 1rem; position: relative; left:-1060px; top:40px">
                                     {{ __('Crear nuevo') }}
                                 </a>
                             </div>
+                            
                             
                         </div>
                     </div>
