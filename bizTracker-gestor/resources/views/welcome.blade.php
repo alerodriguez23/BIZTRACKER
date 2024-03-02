@@ -44,13 +44,13 @@
 
 
 
-<div class="h-screen pb-14 bg-right bg-red-200" style="background-image:url('bg.svg');">
+<div class="h-screen pb-14 bg-right bg-yellow-600" style="background-image:url('bg.svg');">
 	<!--Nav-->
 	<div class="w-full container mx-auto p-6">
 			
 		<div class="w-full flex items-center justify-between">
 			<a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
-				<img src="{{asset('bizTracker-gestor/public/images/1709343873219.png')}}"> BIZTRACKER
+				<img class=" w-24 " src="{{asset('images/1709343873219.png')}}"> BIZTRACKER
 			</a>
 			
 			<div class="flex w-1/2 justify-end content-center">		
@@ -77,17 +77,19 @@
 			<h1 class="my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">BIENVENIDOS A BIZTRACKER</h1>
 			<p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">Potencia tus ventas, simplifica tu gestión </p>
 		
-			<p class="text-blue-400 font-bold pb-8 lg:pb-6 text-center md:text-left fade-in">se mas eficiente</p>
+			<p class="text-blue-400 font-bold pb-8 lg:pb-6 text-center md:text-left fade-in"></p>
 			<div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
+      
 				<img src="App Store.svg" class="h-12 pr-4 bounce-top-icons">
-				<img src="Play Store.svg" class="h-12 bounce-top-icons">
+      
+				<img class=" w-24 " src="{{asset('images/1709343873219.png')}}"> 
 			</div>
 
 		</div>
 		
 		<!--Right Col-->
 		<div class="w-full xl:w-3/5 py-6 overflow-y-hidden">
-			<img class="w-5/6 mx-auto lg:mr-0 slide-in-bottom" src="devices.svg">
+			<img class=" w-20 "  src="{{asset('images/1709343873219.png')}}"> 
 		</div>
 		
 		<!--Footer-->
