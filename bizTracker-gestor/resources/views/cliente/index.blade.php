@@ -45,10 +45,10 @@
                                         <th></th>
                                     </tr>
                                 </thead>
-                                <tbody class="table-bordered">
+                                <tbody class="table-bordered" style="border-block-style: solid; border-inline-style: dashed;">
                                     @foreach ($clientes as $cliente)
                                         <tr>
-                                            <td>{{ ++$i }}</td>
+                                            
                                             
 											<td>{{ $cliente->id_cliente }}</td>
 											<td>{{ $cliente->nombre }}</td>

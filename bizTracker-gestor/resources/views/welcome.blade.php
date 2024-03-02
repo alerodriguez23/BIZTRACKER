@@ -17,6 +17,9 @@
 	<!--Replace with your tailwind.css once created-->
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Unna&family=Young+Serif&display=swap" rel="stylesheet">
 
 	<!-- Animation CSS-->
 	<style>		
@@ -40,57 +43,47 @@
 </head>
 
 
-<body class="leading-normal tracking-normal text-gray-900" style="font-family: 'Source Sans Pro', sans-serif;">
+<body class="leading-normal tracking-normal text-gray-900" style="font-family: 'Source Sans Pro', sans-serif; ">
 
 
 
-<div class="h-screen pb-14 bg-right bg-yellow-600" style="background-image:url('bg.svg');">
+<div class="h-screen pb-14 bg-right bg-yellow-600" style="background-color:antiquewhite;">
 	<!--Nav-->
 	<div class="w-full container mx-auto p-6">
 			
 		<div class="w-full flex items-center justify-between">
 			<a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
-				<img class=" w-24 " src="{{asset('images/1709343873219.png')}}"> BIZTRACKER
+				<img class=" w-70 h-40 " style="position: relative; left:-70px;" src="{{asset('images/1709343873219.png')}}"> 
 			</a>
 			
-			<div class="flex w-1/2 justify-end content-center">		
-				<a class="inline-block text-black-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="/login">
-          Login
-      </a>
-      <a class="inline-block text-black-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="/register">
-          register
-      </a>
-				<a class="inline-block text-black-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 " href="/dashboard">
-					Dashboard
-				</a>  
-			</div>
 			
 		</div>
 
 	</div>
 
 	<!--Main-->
-	<div class="container pt-24 md:pt-48 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+	<div class="container pt-24 md:pt-48 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center" style="position: absolute; top:20px">
 		
 		<!--Left Col-->
-		<div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+		<div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden" >
 			<h1 class="my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">BIENVENIDOS A BIZTRACKER</h1>
-			<p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">Potencia tus ventas, simplifica tu gestión </p>
+			<p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle" style="font-family: 'Italianno', cursive; font-size:40px">Potencia tus ventas, simplifica tu gestión </p>
 		
 			<p class="text-blue-400 font-bold pb-8 lg:pb-6 text-center md:text-left fade-in"></p>
 			<div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
+				
       
-				<img src="App Store.svg" class="h-12 pr-4 bounce-top-icons">
-      
-				<img class=" w-24 " src="{{asset('images/1709343873219.png')}}"> 
 			</div>
 
 		</div>
+		<div class="flex justify-start items-center" style="position: relative; top: -20px;">
+			<a href="/login" class="btn btn-primary mr-6 rounded-lg shadow-lg " style="background-color: #594C45; padding: 10px 30px; font-family: 'Italianno', cursive; font-size:25px; color:white; " >Login</a>
+			<a href="/register" class="btn btn-secondary rounded-lg shadow-lg" style="background-color: #594C45; padding: 10px 30px; font-family: 'Italianno', cursive; font-size:25px; color:white;">Register</a>
+		</div>
+		
 		
 		<!--Right Col-->
-		<div class="w-full xl:w-3/5 py-6 overflow-y-hidden">
-			<img class=" w-20 "  src="{{asset('images/1709343873219.png')}}"> 
-		</div>
+		
 		
 		<!--Footer-->
 		<div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
