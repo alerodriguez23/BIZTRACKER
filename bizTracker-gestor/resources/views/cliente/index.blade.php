@@ -5,22 +5,25 @@
 @endsection
 
 @section('content')
-    <div class="container-fluid">
+    <div class="container-fluid" >
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
-                            <span id="card_title">
-                                {{ __('Cliente') }}
+                            <span class="card_title" style="font-family:'times new roman', sans-serif; font-size: 24px; color: #333333; text-align: center; display: block;">
+                                {{ __('Control de Clientes') }}
                             </span>
+                            
 
-                             <div class="float-right">
-                                <a href="{{ route('clientes.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                            <div class="text-right" style="position: relative;">
+                                <a href="{{ route('clientes.create') }}" class="btn btn-sm rounded" style="background-color: #9A816D; color: #fff; padding: 0.5rem 1rem; position: relative; left:-1060px; top:40px">
+                                    {{ __('Crear nuevo') }}
                                 </a>
-                              </div>
+                            </div>
+                            
+                            
                         </div>
                     </div>
                     @if ($message = Session::get('success'))
@@ -29,25 +32,25 @@
                         </div>
                     @endif
 
-                    <div class="card-body">
+                    <div class="card-body" style="position: relative; top: 60px; ">
                         <div class="table-responsive">
-                            <table class="table table-striped  mt-4">
-                                <thead class="thead">
+                            <table class="table table-bordered table-hover table-sm text-center">
+                                <thead style="background-color: #74675e; color: #ffffff; position:relative; right:-10px; text-alling: center;">
                                     <tr>
                                        
         
-										<th scope="col">Id Cliente</th>
-										<th scope="col">Nombre</th>
-										<th scope="col">Apellido</th>
-										<th scope="col">Telefono</th>
+										<th >Id Cliente</th>
+										<th >Nombre</th>
+										<th >Apellido</th>
+										<th >Telefono</th>
 
                                         <th></th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody class="table-bordered" style="border-block-style: solid; border-inline-style: dashed;">
                                     @foreach ($clientes as $cliente)
                                         <tr>
-                                            <td>{{ ++$i }}</td>
+                                            
                                             
 											<td>{{ $cliente->id_cliente }}</td>
 											<td>{{ $cliente->nombre }}</td>

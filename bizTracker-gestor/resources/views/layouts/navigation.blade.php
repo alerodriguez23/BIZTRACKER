@@ -11,7 +11,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <span class="text-lg" style="font-family: 'Italianno', cursive; color: white; font-size: 40px;">BizTracker</span>
+                        <img class=" w-20 h-15 " src="{{asset('images/1709343873219.png')}}">  
 
                     </a>
                 </div>
