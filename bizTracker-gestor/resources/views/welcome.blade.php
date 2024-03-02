@@ -53,7 +53,7 @@
 			
 		<div class="w-full flex items-center justify-between">
 			<a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
-				<img class=" w-24 " src="{{asset('images/1709343873219.png')}}"> BIZTRACKER
+				<img class=" w-60 h-40 " src="{{asset('images/1709343873219.png')}}"> 
 			</a>
 			
 			<div class="flex w-1/2 justify-end content-center">		
@@ -76,7 +76,7 @@
 			<p class="text-black-400 font-bold pb-8 lg:pb-6 text-center md:text-left fade-in"></p>
 			<div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
       
-				<img src="{{asset('images/1709343873219.png')}}" class="h-12 pr-4 bounce-top-icons">
+				
       
 				
 			</div>
