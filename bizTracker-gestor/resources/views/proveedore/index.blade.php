@@ -75,7 +75,7 @@
                             </span>
 
                             <div class="text-right">
-                                <a href="{{ route('clientes.create') }}" class="btn btn-sm btn-rounded btn-primary btn-action">
+                                <a href="{{ route('proveedores.create') }}" class="btn btn-sm btn-rounded btn-primary btn-action">
                                     {{ __('Crear nuevo') }}
                                 </a>
                                 <a href="#" class="btn btn-sm btn-action btn-show">

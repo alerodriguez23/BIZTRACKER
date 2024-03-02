@@ -70,7 +70,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex justify-content-between align-items-center">
-                            <span class="card_title">
+                        <span class="card_title" style="font-family:'times new roman', sans-serif; font-size: 24px; color: #333333; text-align: center; display: block;">
                                 {{ __('Control de Clientes') }}
                             </span>
 
