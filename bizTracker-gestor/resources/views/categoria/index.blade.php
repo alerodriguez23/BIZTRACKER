@@ -12,13 +12,13 @@
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
-                            <span id="card_title">
-                                {{ __('Categoria') }}
+                            <span class="card_title" style="font-family:'times new roman', sans-serif; font-size: 24px; color: #333333; text-align: center; display: block;">
+                                {{ __('Control de Categorias') }}
                             </span>
 
                              <div class="float-right">
-                                <a href="{{ route('categorias.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                <a href="{{ route('categorias.create') }}" class="btn btn-sm rounded" style="background-color: #9A816D; color: #fff; padding: 0.5rem 1rem; position: relative; left:-1060px; top:40px">
+                                    {{ __('Crear nuevo') }}
                                 </a>
                               </div>
                         </div>
@@ -29,12 +29,12 @@
                         </div>
                     @endif
 
-                    <div class="card-body">
+                    <div class="card-body" style="position: relative; top: 60px; ">
                         <div class="table-responsive">
-                            <table class="table table-striped table-hover">
-                                <thead class="thead">
-                                    <tr>
-                                        <th>No</th>
+                            <table class="table table-bordered table-hover table-sm text-center">
+                                <thead style="background-color: #74675e; color: #ffffff; position:relative; right:-10px; text-alling: center;">
+                                   <tr>
+                                        
                                         
 										<th>Id Categoria</th>
 										<th>Nombre</th>
@@ -46,7 +46,7 @@
                                 <tbody>
                                     @foreach ($categorias as $categoria)
                                         <tr>
-                                            <td>{{ ++$i }}</td>
+                                            
                                             
 											<td>{{ $categoria->id_categoria }}</td>
 											<td>{{ $categoria->nombre }}</td>
