@@ -31,15 +31,15 @@
 
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-striped table-hover">
+                            <table class="table table-striped  mt-4">
                                 <thead class="thead">
                                     <tr>
-                                        <th>No</th>
-                                        
-										<th>Id Cliente</th>
-										<th>Nombre</th>
-										<th>Apellido</th>
-										<th>Telefono</th>
+                                       
+        
+										<th scope="col">Id Cliente</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Apellido</th>
+										<th scope="col">Telefono</th>
 
                                         <th></th>
                                     </tr>

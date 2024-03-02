@@ -50,7 +50,7 @@
 			
 		<div class="w-full flex items-center justify-between">
 			<a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
-				<img src="{{}asset('bizTracker-gestor/public/images/1709343873219.png')}"> BIZTRACKER
+				<img src="{{asset('bizTracker-gestor/public/images/1709343873219.png')}}"> BIZTRACKER
 			</a>
 			
 			<div class="flex w-1/2 justify-end content-center">		
