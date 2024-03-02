@@ -54,12 +54,15 @@
 			</a>
 			
 			<div class="flex w-1/2 justify-end content-center">		
-				<a class="inline-block text-black-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" data-tippy-content="@twitter_handle" href="https://twitter.com/intent/tweet?url=#">
+				<a class="inline-block text-black-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="/login">
           Login
       </a>
-				<a class="inline-block text-black-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 " data-tippy-content="#facebook_id" href="https://www.facebook.com/sharer/sharer.php?u=#">
-					register
-				</a>
+      <a class="inline-block text-black-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="/register">
+          register
+      </a>
+				<a class="inline-block text-black-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 " href="/dashboard">
+					Dashboard
+				</a>  
 			</div>
 			
 		</div>
