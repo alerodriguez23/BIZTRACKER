@@ -44,25 +44,30 @@
 
 
 
+
+
 <div class="h-screen pb-14 bg-right bg-yellow-600" style="background-image:url('bg.svg');">
 	<!--Nav-->
 	<div class="w-full container mx-auto p-6">
 			
 		<div class="w-full flex items-center justify-between">
-			<a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
-				<img class=" w-24 " src="{{asset('images/1709343873219.png')}}"> BIZTRACKER
+			<a class="flex items-center text-black-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
+				<img class=" w-20" src="{{asset('images/1709343873219.png')}}"> BIZTRACKER
 			</a>
-			
-			<div class="flex w-1/2 justify-end content-center">		
+			@auth
+      <a class="inline-block text-black-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 " href="/dashboard">
+					Dashboard
+				</a> 
+      @else
+      <div class="flex w-1/2 justify-end content-center">		
 				<a class="inline-block text-black-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="/login">
           Login
       </a>
       <a class="inline-block text-black-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4" href="/register">
           register
       </a>
-				<a class="inline-block text-black-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 " href="/dashboard">
-					Dashboard
-				</a>  
+      @endif
+				
 			</div>
 			
 		</div>
@@ -74,15 +79,15 @@
 		
 		<!--Left Col-->
 		<div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
-			<h1 class="my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">BIENVENIDOS A BIZTRACKER</h1>
+			<h1 class="my-4 text-3xl md:text-5xl text-black-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">BIENVENIDOS A BIZTRACKER</h1>
 			<p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">Potencia tus ventas, simplifica tu gestión </p>
 		
-			<p class="text-blue-400 font-bold pb-8 lg:pb-6 text-center md:text-left fade-in"></p>
+			<p class="text-black-400 font-bold pb-8 lg:pb-6 text-center md:text-left fade-in"></p>
 			<div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
       
-				<img src="App Store.svg" class="h-12 pr-4 bounce-top-icons">
+				<img  src="{{asset('images/1709343873219.png')}}" class="h-12 pr-4 bounce-top-icons">
       
-				<img class=" w-24 " src="{{asset('images/1709343873219.png')}}"> 
+				
 			</div>
 
 		</div>
@@ -108,5 +113,6 @@
   -->
 
 </body>
+
 
 </html>
