@@ -1,4 +1,9 @@
-<nav x-data="{ open: false }" class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Unna&family=Young+Serif&display=swap" rel="stylesheet">
+
+<nav x-data="{ open: false }" style="background-color: #594C45; border-bottom: 1px solid #4299e1;">
+
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -6,9 +11,11 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+                        <span class="text-lg" style="font-family: 'Italianno', cursive; color: white; font-size: 40px;">BizTracker</span>
+
                     </a>
                 </div>
+                
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
@@ -31,7 +38,7 @@
                         {{ __('Categorias') }}
                     </x-nav-link>
                     <x-nav-link :href="route('compras')" :active="request()->routeIs('compras')">
-                        {{ __('compras') }}
+                        {{ __('Compras') }}
                     </x-nav-link>
                     <x-nav-link :href="route('proveedores')" :active="request()->routeIs('proveedores')">
                         {{ __('Proveedores') }}
@@ -95,7 +102,8 @@
         </div>
 
         <!-- Responsive Settings Options -->
-        <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
+        <div class="pt-4 pb-1 border-t" style="border-color: #594C45; bg-color: #9A816D; ">
+
             <div class="px-4">
                 <div class="font-medium text-base text-gray-800 dark:text-gray-200">{{ Auth::user()->name }}</div>
                 <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>

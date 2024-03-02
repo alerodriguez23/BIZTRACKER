@@ -80,6 +80,8 @@
 			<p class="text-blue-400 font-bold pb-8 lg:pb-6 text-center md:text-left fade-in"></p>
 			<div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
       
+				<img src="App Store.svg" class="h-12 pr-4 bounce-top-icons">
+      
 				<img class=" w-24 " src="{{asset('images/1709343873219.png')}}"> 
 			</div>
 
